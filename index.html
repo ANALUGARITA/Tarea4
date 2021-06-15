@@ -9,26 +9,23 @@
 
     <!-- Enlace a hoja CSS de Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <!-- Enlace a biblioteca JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
     
     <!-- Complemento Leaflet.markercluster -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
  
-    <!-- Enlace a biblioteca JavaScript de Leaflet -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>    
+    <!-- Complemento Leaflet.heat -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
 
-    <!-- Enlace a complemento Leaflet-choropleth -->
-    <script src="js/choropleth.js"></script> 
-
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="css/estilos.css">
-    
     <!-- Enlace a kit de Font Awesome -->
     <script src="https://kit.fontawesome.com/41b9a1bfbd.js" crossorigin="anonymous"></script>
 
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
     
 </head>
 <body>
@@ -40,10 +37,6 @@
 
         <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
         <script src="js/scripts.js"></script>	
-
-        <!-- Controles para la opacidad de la capa de elevaciones -->
-        <h5>Opacidad de la capa de elevaciones: <span id="span-opacity-demcr">0.5</span></h5>
-        <input type='range' id='sld-opacity-demcr' min='0' max='1' step='0.1' value='0.5' onchange='updateOpacityDemcr();'>
 
 </body>
 </html>
