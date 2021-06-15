@@ -74,8 +74,8 @@ $.getJSON("https://raw.githubusercontent.com/ANALUGARITA/Tarea4/main/capas/finca
   capa_cafe_agrupados.addTo(mapa);
   capa_cafe_calor.addTo(mapa);
   control_capas.addOverlay(capa_cafe_calor, 'Mapa de calor cafe');  
-  control_capas.addOverlay(capa_cafe_agrupados, 'Fincas agrupadas de cafe');
-  control_capas.addOverlay(capa_fincascafe, 'Fincas de cafe');
+  control_capas.addOverlay(capa_cafe_agrupados, 'Fincas de cafe');
+ 
 });
 
 
